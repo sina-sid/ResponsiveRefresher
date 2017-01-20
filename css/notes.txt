@@ -1,0 +1,13 @@
+1/18/17 Notes
+
+CSS reset: override browser-specific format, style.css brings in the reset file
+nav: new elements for semantic
+figure, figurecaption: new, relate text+images 
+aside: secondary caption
+article: An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+float tends to break things, need to clear things
+
+CSS background targets all subcategories (imgae, color)
+inine display, block display
+vendor prefixing
+em vs rem for sizing (rem = CSS3, more absolute)

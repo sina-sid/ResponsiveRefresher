@@ -1,0 +1,52 @@
+@import 'reset.css';
+
+html {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+header nav ul li {
+	float: left;
+	position: relative;
+}
+
+header nav ul li ul li{
+	float: none;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header nav ul li a {
+	background: #fcf;
+	padding: 1em;
+	display: block; /*review this*/
+	transition: 1s ease-in-out background; /* putting this line on this block does this both in the in state and out state */
+}
+
+header nav ul li a:hover {
+	background: #fc0;
+	transition: .3s ease-in-out background; /* putting this line on this block does this both in the in state and out state */
+	/*transition: 1s linear all; */
+	/*all=target all properties in this section */
+}
+
+header nav ul li ul li a{
+	background: #fc0;
+	background: rgba(255,200,0,0.8); /* above line is fallback for older browsers */
+
+}
+
+header nav ul li ul {
+	display: none;
+	position: absolute; /* needs containing li to be position relative */
+	top: 3rem; /* needs an offset of the length of the main button for older browsers (height of text + padding) */
+}
+
+header nav ul li:hover ul {
+	display: block;
+}
